@@ -1,0 +1,377 @@
+2016-07-19 16:36:03,332 INFO[org.springframework.test.context.support.DefaultTestContextBootstrapper:259] - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2016-07-19 16:36:03,362 INFO[org.springframework.test.context.support.DefaultTestContextBootstrapper:185] - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@9c035a, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@a0416a, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@126d2fe, org.springframework.test.context.support.DirtiesContextTestExecutionListener@1e62b84, org.springframework.test.context.transaction.TransactionalTestExecutionListener@331538, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@1b61aea]
+2016-07-19 16:36:03,518 INFO[org.springframework.beans.factory.xml.XmlBeanDefinitionReader:317] - Loading XML bean definitions from class path resource [application.xml]
+2016-07-19 16:36:03,650 INFO[org.springframework.beans.factory.xml.XmlBeanDefinitionReader:317] - Loading XML bean definitions from class path resource [spring/spring-config.xml]
+2016-07-19 16:36:03,715 INFO[org.springframework.beans.factory.xml.XmlBeanDefinitionReader:317] - Loading XML bean definitions from file [D:\workspace-intellij\beautyssm_service_goods\target\classes\spring\spring-dao.xml]
+2016-07-19 16:36:03,755 INFO[org.springframework.beans.factory.xml.XmlBeanDefinitionReader:317] - Loading XML bean definitions from file [D:\workspace-intellij\beautyssm_service_goods\target\classes\spring\spring-quartz.xml]
+2016-07-19 16:36:03,875 INFO[org.springframework.beans.factory.xml.XmlBeanDefinitionReader:317] - Loading XML bean definitions from file [D:\workspace-intellij\beautyssm_service_goods\target\classes\spring\spring-redis.xml]
+2016-07-19 16:36:03,911 INFO[org.springframework.beans.factory.xml.XmlBeanDefinitionReader:317] - Loading XML bean definitions from file [D:\workspace-intellij\beautyssm_service_goods\target\classes\spring\spring-service.xml]
+2016-07-19 16:36:03,975 INFO[org.springframework.beans.factory.xml.XmlBeanDefinitionReader:317] - Loading XML bean definitions from file [D:\workspace-intellij\beautyssm_service_goods\target\classes\dubbo\dubbo-consumer.xml]
+2016-07-19 16:36:04,019 INFO[com.alibaba.dubbo.common.logger.LoggerFactory:?] - using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+2016-07-19 16:36:04,047 INFO[org.springframework.beans.factory.xml.XmlBeanDefinitionReader:317] - Loading XML bean definitions from file [D:\workspace-intellij\beautyssm_service_goods\target\classes\dubbo\dubbo-provider.xml]
+2016-07-19 16:36:04,085 INFO[org.springframework.context.support.GenericApplicationContext:573] - Refreshing org.springframework.context.support.GenericApplicationContext@dbe3d3: startup date [Tue Jul 19 16:36:04 GMT+08:00 2016]; root of context hierarchy
+2016-07-19 16:36:04,421 INFO[org.springframework.context.support.PropertySourcesPlaceholderConfigurer:172] - Loading properties file from class path resource [jdbc.properties]
+2016-07-19 16:36:04,431 INFO[org.springframework.context.support.PropertySourcesPlaceholderConfigurer:172] - Loading properties file from class path resource [redis.properties]
+2016-07-19 16:36:04,434 INFO[org.springframework.context.support.PropertySourcesPlaceholderConfigurer:172] - Loading properties file from class path resource [system.properties]
+2016-07-19 16:36:04,436 INFO[org.springframework.context.support.PropertySourcesPlaceholderConfigurer:172] - Loading properties file from class path resource [ValidationMessages.properties]
+2016-07-19 16:36:04,766 INFO[org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328] - Bean 'userService.addScoreBySyn' of type [class com.alibaba.dubbo.config.MethodConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-07-19 16:36:04,777 INFO[org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328] - Bean 'userService.addScoreBySyn#1' of type [class com.alibaba.dubbo.config.MethodConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-07-19 16:36:04,785 INFO[org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328] - Bean 'beautyssm-service-goods' of type [class com.alibaba.dubbo.config.ApplicationConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-07-19 16:36:04,790 INFO[org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328] - Bean 'com.alibaba.dubbo.config.RegistryConfig' of type [class com.alibaba.dubbo.config.RegistryConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-07-19 16:36:04,791 INFO[org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328] - Bean 'userService' of type [class com.alibaba.dubbo.config.spring.ReferenceBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-07-19 16:36:05,607 INFO[com.alibaba.druid.pool.DruidDataSource:722] - {dataSource-1} inited
+2016-07-19 16:36:06,387 INFO[com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry:232] -  [DUBBO] Load registry store file C:\Users\yingjun10627\.dubbo\dubbo-registry-120.27.141.45.cache, data: {*/com.yingjun.ssm.api.user.service.UserService:*=dubbo://10.47.113.174:20880/com.yingjun.ssm.api.user.service.UserService?anyhost=true&application=beautyssm-service-user&default.accepts=1000&default.threadpool=fixed&default.threads=100&default.timeout=10000&dubbo=2.8.4&generic=false&interface=com.yingjun.ssm.api.user.service.UserService&methods=getUserList&pid=17584&retries=0&revision=1.0.0&side=provider&timestamp=1468834910651 consumer://10.47.113.174/com.yingjun.ssm.api.user.service.UserService?application=beautyssm-web-user&category=consumers&check=false&dubbo=2.8.4&interface=com.yingjun.ssm.api.user.service.UserService&methods=getUserList&pid=14073&revision=1.0.0&side=consumer&timestamp=1468745161000, com.yingjun.ssm.api.user.service.UserService=dubbo://10.47.113.174:20880/com.yingjun.ssm.api.user.service.UserService?anyhost=true&application=beautyssm-service-user&default.accepts=1000&default.threadpool=fixed&default.threads=100&default.timeout=6000&dubbo=2.8.4&generic=false&interface=com.yingjun.ssm.api.user.service.UserService&methods=queryByPhone,addScoreBySyn,getUserList,addScoreByAsy&owner=yingjun_service_user&pid=20379&retries=1&revision=1.0.0&side=provider&timestamp=1468912742487 empty://10.26.210.194/com.yingjun.ssm.api.user.service.UserService?application=beautyssm-web-user&category=configurators&dubbo=2.8.4&interface=com.yingjun.ssm.api.user.service.UserService&methods=addScoreBySyn,queryByPhone,addScoreByAsy,getUserList&owner=yingjun_web_user&pid=6808&revision=1.0.0&side=consumer&timestamp=1468912903289 empty://10.26.210.194/com.yingjun.ssm.api.user.service.UserService?application=beautyssm-web-user&category=routers&dubbo=2.8.4&interface=com.yingjun.ssm.api.user.service.UserService&methods=addScoreBySyn,queryByPhone,addScoreByAsy,getUserList&owner=yingjun_web_user&pid=6808&revision=1.0.0&side=consumer&timestamp=1468912903289, com.alibaba.dubbo.monitor.MonitorService=empty://10.26.113.45:20870/com.alibaba.dubbo.monitor.MonitorService?anyhost=true&application=dubbo-monitor&category=configurators&check=false&delay=-1&dubbo=2.8.4&generic=false&interface=com.alibaba.dubbo.monitor.MonitorService&methods=lookup,collect&owner=yingjun_monitor&pid=11396&revision=2.8.4&side=provider&timestamp=1468834737372, com.yingjun.ssm.api.goods.service.GoodsService=dubbo://10.47.113.174:20881/com.yingjun.ssm.api.goods.service.GoodsService?anyhost=true&application=beautyssm-service-goods&default.accepts=1000&default.threadpool=fixed&default.threads=100&default.timeout=6000&dubbo=2.8.4&generic=false&interface=com.yingjun.ssm.api.goods.service.GoodsService&methods=testDistributedTransaction,buyGoods,getGoodsList,testDistributedTransactionByAsy&owner=yingjun_service_goods&pid=20285&retries=2&revision=1.0.0&side=provider&timestamp=1468909787016 empty://10.26.113.122/com.yingjun.ssm.api.goods.service.GoodsService?application=beautyssm-web-goods-2&category=configurators&dubbo=2.8.4&interface=com.yingjun.ssm.api.goods.service.GoodsService&methods=buyGoods,testDistributedTransactionByAsy,testDistributedTransaction,getGoodsList&owner=yingjun_web_goods&pid=9948&revision=1.0.0&side=consumer&timestamp=1468910934197 empty://10.26.113.122/com.yingjun.ssm.api.goods.service.GoodsService?application=beautyssm-web-goods-2&category=routers&dubbo=2.8.4&interface=com.yingjun.ssm.api.goods.service.GoodsService&methods=buyGoods,testDistributedTransactionByAsy,testDistributedTransaction,getGoodsList&owner=yingjun_web_goods&pid=9948&revision=1.0.0&side=consumer&timestamp=1468910934197, */com.alibaba.dubbo.monitor.MonitorService:*=empty://10.26.113.45/com.alibaba.dubbo.monitor.MonitorService?category=providers&check=false&classifier=*&group=*&interface=com.alibaba.dubbo.monitor.MonitorService&version=* empty://10.26.113.45/com.alibaba.dubbo.monitor.MonitorService?category=consumers&check=false&classifier=*&group=*&interface=com.alibaba.dubbo.monitor.MonitorService&version=*}, dubbo version: 2.8.4, current host: 127.0.0.1
+2016-07-19 16:36:06,399 WARN[org.springframework.context.support.GenericApplicationContext:544] - Exception encountered during context initialization - cancelling refresh attempt
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'goodsService': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.yingjun.ssm.api.user.service.UserService com.yingjun.ssm.api.goods.service.impl.GoodsServiceImpl.userService; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userService': FactoryBean threw exception on object creation; nested exception is java.lang.NoClassDefFoundError: org/I0Itec/zkclient/IZkStateListener
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:334)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1214)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:543)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:305)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:301)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:196)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:772)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:834)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:537)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:125)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:60)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:109)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:261)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:98)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:116)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:83)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:117)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:228)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:217)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:276)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:278)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:236)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:87)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:180)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:119)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:42)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:234)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:74)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:144)
+Caused by: org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.yingjun.ssm.api.user.service.UserService com.yingjun.ssm.api.goods.service.impl.GoodsServiceImpl.userService; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userService': FactoryBean threw exception on object creation; nested exception is java.lang.NoClassDefFoundError: org/I0Itec/zkclient/IZkStateListener
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:571)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:331)
+	... 45 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userService': FactoryBean threw exception on object creation; nested exception is java.lang.NoClassDefFoundError: org/I0Itec/zkclient/IZkStateListener
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.doGetObjectFromFactoryBean(FactoryBeanRegistrySupport.java:175)
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.getObjectFromFactoryBean(FactoryBeanRegistrySupport.java:103)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getObjectForBeanInstance(AbstractBeanFactory.java:1574)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:253)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:196)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1145)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1069)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:967)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:543)
+	... 47 more
+Caused by: java.lang.NoClassDefFoundError: org/I0Itec/zkclient/IZkStateListener
+	at com.alibaba.dubbo.remoting.zookeeper.zkclient.ZkclientZookeeperTransporter.connect(ZkclientZookeeperTransporter.java:10)
+	at com.alibaba.dubbo.remoting.zookeeper.ZookeeperTransporter$Adpative.connect(ZookeeperTransporter$Adpative.java)
+	at com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry.<init>(ZookeeperRegistry.java:69)
+	at com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistryFactory.createRegistry(ZookeeperRegistryFactory.java:37)
+	at com.alibaba.dubbo.registry.support.AbstractRegistryFactory.getRegistry(AbstractRegistryFactory.java:94)
+	at com.alibaba.dubbo.registry.RegistryFactory$Adpative.getRegistry(RegistryFactory$Adpative.java)
+	at com.alibaba.dubbo.registry.integration.RegistryProtocol.refer(RegistryProtocol.java:240)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper.refer(ProtocolFilterWrapper.java:60)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolListenerWrapper.refer(ProtocolListenerWrapper.java:63)
+	at com.alibaba.dubbo.rpc.Protocol$Adpative.refer(Protocol$Adpative.java)
+	at com.alibaba.dubbo.config.ReferenceConfig.createProxy(ReferenceConfig.java:392)
+	at com.alibaba.dubbo.config.ReferenceConfig.init(ReferenceConfig.java:300)
+	at com.alibaba.dubbo.config.ReferenceConfig.get(ReferenceConfig.java:138)
+	at com.alibaba.dubbo.config.spring.ReferenceBean.getObject(ReferenceBean.java:65)
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.doGetObjectFromFactoryBean(FactoryBeanRegistrySupport.java:168)
+	... 55 more
+Caused by: java.lang.ClassNotFoundException: org.I0Itec.zkclient.IZkStateListener
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:423)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:356)
+	... 70 more
+2016-07-19 16:36:06,415 INFO[com.alibaba.druid.pool.DruidDataSource:1447] - {dataSource-1} closed
+2016-07-19 16:36:06,417 ERROR[org.springframework.test.context.TestContextManager:231] - Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@126d2fe] to prepare test instance [com.yingjun.ssm.core.goods.dao.GoodsDaoTest@b3fd89]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:83)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:117)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:228)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:217)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:276)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:278)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:236)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:87)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:180)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:119)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:42)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:234)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:74)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:144)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'goodsService': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.yingjun.ssm.api.user.service.UserService com.yingjun.ssm.api.goods.service.impl.GoodsServiceImpl.userService; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userService': FactoryBean threw exception on object creation; nested exception is java.lang.NoClassDefFoundError: org/I0Itec/zkclient/IZkStateListener
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:334)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1214)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:543)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:305)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:301)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:196)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:772)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:834)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:537)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:125)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:60)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:109)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:261)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:98)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:116)
+	... 29 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.yingjun.ssm.api.user.service.UserService com.yingjun.ssm.api.goods.service.impl.GoodsServiceImpl.userService; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userService': FactoryBean threw exception on object creation; nested exception is java.lang.NoClassDefFoundError: org/I0Itec/zkclient/IZkStateListener
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:571)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:331)
+	... 45 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userService': FactoryBean threw exception on object creation; nested exception is java.lang.NoClassDefFoundError: org/I0Itec/zkclient/IZkStateListener
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.doGetObjectFromFactoryBean(FactoryBeanRegistrySupport.java:175)
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.getObjectFromFactoryBean(FactoryBeanRegistrySupport.java:103)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getObjectForBeanInstance(AbstractBeanFactory.java:1574)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:253)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:196)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1145)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1069)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:967)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:543)
+	... 47 more
+Caused by: java.lang.NoClassDefFoundError: org/I0Itec/zkclient/IZkStateListener
+	at com.alibaba.dubbo.remoting.zookeeper.zkclient.ZkclientZookeeperTransporter.connect(ZkclientZookeeperTransporter.java:10)
+	at com.alibaba.dubbo.remoting.zookeeper.ZookeeperTransporter$Adpative.connect(ZookeeperTransporter$Adpative.java)
+	at com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry.<init>(ZookeeperRegistry.java:69)
+	at com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistryFactory.createRegistry(ZookeeperRegistryFactory.java:37)
+	at com.alibaba.dubbo.registry.support.AbstractRegistryFactory.getRegistry(AbstractRegistryFactory.java:94)
+	at com.alibaba.dubbo.registry.RegistryFactory$Adpative.getRegistry(RegistryFactory$Adpative.java)
+	at com.alibaba.dubbo.registry.integration.RegistryProtocol.refer(RegistryProtocol.java:240)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper.refer(ProtocolFilterWrapper.java:60)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolListenerWrapper.refer(ProtocolListenerWrapper.java:63)
+	at com.alibaba.dubbo.rpc.Protocol$Adpative.refer(Protocol$Adpative.java)
+	at com.alibaba.dubbo.config.ReferenceConfig.createProxy(ReferenceConfig.java:392)
+	at com.alibaba.dubbo.config.ReferenceConfig.init(ReferenceConfig.java:300)
+	at com.alibaba.dubbo.config.ReferenceConfig.get(ReferenceConfig.java:138)
+	at com.alibaba.dubbo.config.spring.ReferenceBean.getObject(ReferenceBean.java:65)
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.doGetObjectFromFactoryBean(FactoryBeanRegistrySupport.java:168)
+	... 55 more
+Caused by: java.lang.ClassNotFoundException: org.I0Itec.zkclient.IZkStateListener
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:423)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:356)
+	... 70 more
+2016-07-19 16:36:06,443 INFO[com.alibaba.dubbo.config.AbstractConfig:450] -  [DUBBO] Run shutdown hook now., dubbo version: 2.8.4, current host: 127.0.0.1
+2016-07-19 16:36:06,443 INFO[com.alibaba.dubbo.registry.support.AbstractRegistryFactory:63] -  [DUBBO] Close all registries [], dubbo version: 2.8.4, current host: 127.0.0.1
+2016-07-19 16:36:37,625 INFO[org.springframework.test.context.support.DefaultTestContextBootstrapper:259] - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2016-07-19 16:36:37,651 INFO[org.springframework.test.context.support.DefaultTestContextBootstrapper:185] - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@c69203, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@9c035a, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@a0416a, org.springframework.test.context.support.DirtiesContextTestExecutionListener@126d2fe, org.springframework.test.context.transaction.TransactionalTestExecutionListener@1e62b84, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@331538]
+2016-07-19 16:36:37,809 INFO[org.springframework.beans.factory.xml.XmlBeanDefinitionReader:317] - Loading XML bean definitions from class path resource [application.xml]
+2016-07-19 16:36:37,934 INFO[org.springframework.beans.factory.xml.XmlBeanDefinitionReader:317] - Loading XML bean definitions from class path resource [spring/spring-config.xml]
+2016-07-19 16:36:37,992 INFO[org.springframework.beans.factory.xml.XmlBeanDefinitionReader:317] - Loading XML bean definitions from file [D:\workspace-intellij\beautyssm_service_goods\target\classes\spring\spring-dao.xml]
+2016-07-19 16:36:38,013 INFO[org.springframework.beans.factory.xml.XmlBeanDefinitionReader:317] - Loading XML bean definitions from file [D:\workspace-intellij\beautyssm_service_goods\target\classes\spring\spring-quartz.xml]
+2016-07-19 16:36:38,119 INFO[org.springframework.beans.factory.xml.XmlBeanDefinitionReader:317] - Loading XML bean definitions from file [D:\workspace-intellij\beautyssm_service_goods\target\classes\spring\spring-redis.xml]
+2016-07-19 16:36:38,151 INFO[org.springframework.beans.factory.xml.XmlBeanDefinitionReader:317] - Loading XML bean definitions from file [D:\workspace-intellij\beautyssm_service_goods\target\classes\spring\spring-service.xml]
+2016-07-19 16:36:38,197 INFO[org.springframework.context.support.GenericApplicationContext:573] - Refreshing org.springframework.context.support.GenericApplicationContext@f66eac: startup date [Tue Jul 19 16:36:38 GMT+08:00 2016]; root of context hierarchy
+2016-07-19 16:36:38,386 INFO[org.springframework.context.support.PropertySourcesPlaceholderConfigurer:172] - Loading properties file from class path resource [jdbc.properties]
+2016-07-19 16:36:38,391 INFO[org.springframework.context.support.PropertySourcesPlaceholderConfigurer:172] - Loading properties file from class path resource [redis.properties]
+2016-07-19 16:36:38,394 INFO[org.springframework.context.support.PropertySourcesPlaceholderConfigurer:172] - Loading properties file from class path resource [system.properties]
+2016-07-19 16:36:38,396 INFO[org.springframework.context.support.PropertySourcesPlaceholderConfigurer:172] - Loading properties file from class path resource [ValidationMessages.properties]
+2016-07-19 16:36:39,196 INFO[com.alibaba.druid.pool.DruidDataSource:722] - {dataSource-1} inited
+2016-07-19 16:36:39,622 WARN[org.springframework.context.support.GenericApplicationContext:544] - Exception encountered during context initialization - cancelling refresh attempt
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'goodsService': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.yingjun.ssm.api.user.service.UserService com.yingjun.ssm.api.goods.service.impl.GoodsServiceImpl.userService; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [com.yingjun.ssm.api.user.service.UserService] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:334)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1214)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:543)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:305)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:301)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:196)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:772)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:834)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:537)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:125)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:60)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:109)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:261)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:98)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:116)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:83)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:117)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:228)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:217)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:276)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:278)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:236)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:87)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:180)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:119)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:42)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:234)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:74)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:144)
+Caused by: org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.yingjun.ssm.api.user.service.UserService com.yingjun.ssm.api.goods.service.impl.GoodsServiceImpl.userService; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [com.yingjun.ssm.api.user.service.UserService] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:571)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:331)
+	... 45 more
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [com.yingjun.ssm.api.user.service.UserService] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoSuchBeanDefinitionException(DefaultListableBeanFactory.java:1326)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1072)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:967)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:543)
+	... 47 more
+2016-07-19 16:36:39,632 INFO[com.alibaba.druid.pool.DruidDataSource:1447] - {dataSource-1} closed
+2016-07-19 16:36:39,636 ERROR[org.springframework.test.context.TestContextManager:231] - Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@a0416a] to prepare test instance [com.yingjun.ssm.core.goods.dao.GoodsDaoTest@672f0d]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:83)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:117)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:228)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:217)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:276)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:278)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:236)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:87)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:180)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:119)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:42)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:234)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:74)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:144)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'goodsService': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.yingjun.ssm.api.user.service.UserService com.yingjun.ssm.api.goods.service.impl.GoodsServiceImpl.userService; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [com.yingjun.ssm.api.user.service.UserService] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:334)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1214)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:543)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:305)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:301)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:196)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:772)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:834)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:537)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:125)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:60)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:109)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:261)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:98)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:116)
+	... 29 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.yingjun.ssm.api.user.service.UserService com.yingjun.ssm.api.goods.service.impl.GoodsServiceImpl.userService; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [com.yingjun.ssm.api.user.service.UserService] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:571)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:331)
+	... 45 more
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [com.yingjun.ssm.api.user.service.UserService] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoSuchBeanDefinitionException(DefaultListableBeanFactory.java:1326)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1072)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:967)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:543)
+	... 47 more
+2016-07-19 16:38:00,685 INFO[org.springframework.test.context.support.DefaultTestContextBootstrapper:259] - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2016-07-19 16:38:00,712 INFO[org.springframework.test.context.support.DefaultTestContextBootstrapper:185] - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@9c035a, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@a0416a, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@126d2fe, org.springframework.test.context.support.DirtiesContextTestExecutionListener@1e62b84, org.springframework.test.context.transaction.TransactionalTestExecutionListener@331538, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@1b61aea]
+2016-07-19 16:38:00,875 INFO[org.springframework.beans.factory.xml.XmlBeanDefinitionReader:317] - Loading XML bean definitions from class path resource [application.xml]
+2016-07-19 16:38:00,995 INFO[org.springframework.beans.factory.xml.XmlBeanDefinitionReader:317] - Loading XML bean definitions from class path resource [spring/spring-config.xml]
+2016-07-19 16:38:01,056 INFO[org.springframework.beans.factory.xml.XmlBeanDefinitionReader:317] - Loading XML bean definitions from file [D:\workspace-intellij\beautyssm_service_goods\target\classes\spring\spring-dao.xml]
+2016-07-19 16:38:01,079 INFO[org.springframework.beans.factory.xml.XmlBeanDefinitionReader:317] - Loading XML bean definitions from file [D:\workspace-intellij\beautyssm_service_goods\target\classes\spring\spring-quartz.xml]
+2016-07-19 16:38:01,181 INFO[org.springframework.beans.factory.xml.XmlBeanDefinitionReader:317] - Loading XML bean definitions from file [D:\workspace-intellij\beautyssm_service_goods\target\classes\spring\spring-redis.xml]
+2016-07-19 16:38:01,202 INFO[org.springframework.beans.factory.xml.XmlBeanDefinitionReader:317] - Loading XML bean definitions from file [D:\workspace-intellij\beautyssm_service_goods\target\classes\spring\spring-service.xml]
+2016-07-19 16:38:01,260 INFO[org.springframework.context.support.GenericApplicationContext:573] - Refreshing org.springframework.context.support.GenericApplicationContext@dbe3d3: startup date [Tue Jul 19 16:38:01 GMT+08:00 2016]; root of context hierarchy
+2016-07-19 16:38:01,447 INFO[org.springframework.context.support.PropertySourcesPlaceholderConfigurer:172] - Loading properties file from class path resource [jdbc.properties]
+2016-07-19 16:38:01,453 INFO[org.springframework.context.support.PropertySourcesPlaceholderConfigurer:172] - Loading properties file from class path resource [redis.properties]
+2016-07-19 16:38:01,455 INFO[org.springframework.context.support.PropertySourcesPlaceholderConfigurer:172] - Loading properties file from class path resource [system.properties]
+2016-07-19 16:38:01,457 INFO[org.springframework.context.support.PropertySourcesPlaceholderConfigurer:172] - Loading properties file from class path resource [ValidationMessages.properties]
+2016-07-19 16:38:02,258 INFO[com.alibaba.druid.pool.DruidDataSource:722] - {dataSource-1} inited
+2016-07-19 16:38:02,749 INFO[org.springframework.context.support.GenericApplicationContext:951] - Closing org.springframework.context.support.GenericApplicationContext@dbe3d3: startup date [Tue Jul 19 16:38:01 GMT+08:00 2016]; root of context hierarchy
+2016-07-19 16:38:02,754 INFO[com.alibaba.druid.pool.DruidDataSource:1447] - {dataSource-1} closed
+2016-07-19 16:40:20,902 INFO[org.springframework.test.context.support.DefaultTestContextBootstrapper:259] - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2016-07-19 16:40:20,934 INFO[org.springframework.test.context.support.DefaultTestContextBootstrapper:185] - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@25303, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@9810f1, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@1805516, org.springframework.test.context.support.DirtiesContextTestExecutionListener@5231c4, org.springframework.test.context.transaction.TransactionalTestExecutionListener@41529e, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@970e7c]
+2016-07-19 16:40:21,080 INFO[org.springframework.beans.factory.xml.XmlBeanDefinitionReader:317] - Loading XML bean definitions from class path resource [application.xml]
+2016-07-19 16:40:21,200 INFO[org.springframework.beans.factory.xml.XmlBeanDefinitionReader:317] - Loading XML bean definitions from class path resource [spring/spring-config.xml]
+2016-07-19 16:40:21,261 INFO[org.springframework.beans.factory.xml.XmlBeanDefinitionReader:317] - Loading XML bean definitions from file [D:\workspace-intellij\beautyssm_service_goods\target\classes\spring\spring-dao.xml]
+2016-07-19 16:40:21,286 INFO[org.springframework.beans.factory.xml.XmlBeanDefinitionReader:317] - Loading XML bean definitions from file [D:\workspace-intellij\beautyssm_service_goods\target\classes\spring\spring-quartz.xml]
+2016-07-19 16:40:21,384 INFO[org.springframework.beans.factory.xml.XmlBeanDefinitionReader:317] - Loading XML bean definitions from file [D:\workspace-intellij\beautyssm_service_goods\target\classes\spring\spring-redis.xml]
+2016-07-19 16:40:21,409 INFO[org.springframework.beans.factory.xml.XmlBeanDefinitionReader:317] - Loading XML bean definitions from file [D:\workspace-intellij\beautyssm_service_goods\target\classes\spring\spring-service.xml]
+2016-07-19 16:40:21,465 INFO[org.springframework.context.support.GenericApplicationContext:573] - Refreshing org.springframework.context.support.GenericApplicationContext@1041bea: startup date [Tue Jul 19 16:40:21 GMT+08:00 2016]; root of context hierarchy
+2016-07-19 16:40:21,667 INFO[org.springframework.context.support.PropertySourcesPlaceholderConfigurer:172] - Loading properties file from class path resource [jdbc.properties]
+2016-07-19 16:40:21,673 INFO[org.springframework.context.support.PropertySourcesPlaceholderConfigurer:172] - Loading properties file from class path resource [redis.properties]
+2016-07-19 16:40:21,676 INFO[org.springframework.context.support.PropertySourcesPlaceholderConfigurer:172] - Loading properties file from class path resource [system.properties]
+2016-07-19 16:40:21,677 INFO[org.springframework.context.support.PropertySourcesPlaceholderConfigurer:172] - Loading properties file from class path resource [ValidationMessages.properties]
+2016-07-19 16:40:22,489 INFO[com.alibaba.druid.pool.DruidDataSource:722] - {dataSource-1} inited
+2016-07-19 16:40:23,342 INFO[org.springframework.context.support.GenericApplicationContext:951] - Closing org.springframework.context.support.GenericApplicationContext@1041bea: startup date [Tue Jul 19 16:40:21 GMT+08:00 2016]; root of context hierarchy
+2016-07-19 16:40:23,346 INFO[com.alibaba.druid.pool.DruidDataSource:1447] - {dataSource-1} closed
