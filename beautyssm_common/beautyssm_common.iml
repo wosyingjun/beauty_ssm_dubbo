@@ -4,8 +4,7 @@
     <facet type="Spring" name="Spring">
       <configuration>
         <fileset id="fileset" name="Spring Application Context" removed="false">
-          <file>file://$MODULE_DIR$/src/main/resources/spring/spring-service.xml</file>
-          <file>file://$MODULE_DIR$/src/main/resources/spring/spring-quartz.xml</file>
+          <file>file://$MODULE_DIR$/src/main/resources/spring/spring-config.xml</file>
         </fileset>
       </configuration>
     </facet>
