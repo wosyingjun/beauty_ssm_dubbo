@@ -7,6 +7,7 @@
 - Mybatis（最少配置方案）
 - Quartz时间调度
 - Redis缓存（ProtoStuff序列化）
+- **[基于keepalived的nginx高可用方案](http://wosyingjun.iteye.com/blog/2313147)**
 - **[Redis Sentinel主从高可用方案](http://wosyingjun.iteye.com/blog/2289593)**
 - **[Druid（数据源配置 sql防注入 sql性能监控)](http://wosyingjun.iteye.com/blog/2306139)**
 - **[Dubbo+Zookeeper分布式服务框架](http://dubbo.io/Home-zh.htm)**
