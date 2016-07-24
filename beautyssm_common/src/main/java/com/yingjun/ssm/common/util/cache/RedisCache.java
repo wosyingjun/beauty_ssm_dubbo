@@ -1,8 +1,6 @@
 package com.yingjun.ssm.common.util.cache;
 
-import java.util.List;
-import java.util.Set;
-
+import com.yingjun.ssm.common.util.ProtoStuffSerializerUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DataAccessException;
 import org.springframework.data.redis.connection.RedisConnection;
@@ -10,12 +8,15 @@ import org.springframework.data.redis.core.RedisCallback;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Component;
 
-import com.yingjun.ssm.common.util.ProtoStuffSerializerUtil;
+import java.util.List;
+import java.util.Set;
 
 
 /**
  * redis缓存
- * 
+ *
+ * 采用Jedis或Jedis Sentinel
+ *
  * @author yingjun10627
  *
  */
@@ -125,10 +126,9 @@ public class RedisCache {
 
 	/**
 	 * 清空所有缓存
-	 * 
-	 * @param key
 	 */
 	public void clearCache() {
 		deleteCacheWithPattern(RedisCache.CAHCENAME+"|*");
 	}
+
 }

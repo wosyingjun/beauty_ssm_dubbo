@@ -18,7 +18,7 @@
 - **分布式事务（待完善）**
 - **分布式锁（待完善）**
 - **dubbo服务集群、负载均衡策略（待完善）**
-- **Redis集群高可用方案（待完善）**
+- **[Redis Cluster集群高可用方案](http://wosyingjun.iteye.com/blog/2289220)**
 - **[Zookeeper集群高可用方案](http://wosyingjun.iteye.com/blog/2312960)**
 - **消息中间件 ActiveMQ 的引入（待完善）**
 - **ActiveMQ 集群高可用方案（待完善）**
