@@ -1,13 +1,15 @@
 package com.yingjun.ssm.common.util.cache;
 
 import com.yingjun.ssm.common.util.ProtoStuffSerializerUtil;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.JedisCluster;
 import redis.clients.jedis.JedisPool;
 
-import java.util.*;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
 
 
 /**
@@ -25,7 +27,7 @@ public class RedisClusterCache {
 	public final static String CAHCENAME="cache";//缓存名
 	public final static int CAHCETIME=60;//默认缓存时间
 
-	@Autowired
+	//@Autowired
 	private JedisCluster jedisCluster;
 
 

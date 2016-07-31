@@ -30,16 +30,10 @@ public interface GoodsService {
 
 
 	/**
-	 * 仅仅是为了测试下分布式事务(同步请求模式)
+	 * 仅仅是为了测试下分布式事务
 	 * @param goodsid
 	 */
 	void testDistributedTransaction(long goodsid);
 
-
-	/**
-	 * 仅仅是为了测试下分布式事务(异步请求模式)
-	 * @param goodsid
-     */
-	void testDistributedTransactionByAsy(long goodsid);
 
 }

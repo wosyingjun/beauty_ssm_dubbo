@@ -20,6 +20,8 @@
 		<beautyssm_web_user.version>1.0.0</beautyssm_web_user.version>
 		<beautyssm_web_goods.version>1.0.0</beautyssm_web_goods.version>
 
+		<beautyssm_mq_consumer.version>1.0.0</beautyssm_mq_consumer.version>
+
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<maven.build.timestamp.format>yyyyMMdd</maven.build.timestamp.format>
 		<spring.version>4.2.0.RELEASE</spring.version>
@@ -36,6 +38,8 @@
 		<module>../beautyssm_api_goods</module>
 		<module>../beautyssm_service_goods</module>
 		<module>../beautyssm_web_goods</module>
+
+		<module>../beautyssm_mq_consumer</module>
 	</modules>
 
 
@@ -110,7 +114,26 @@
 			<artifactId>httpclient</artifactId>
 			<version>4.5</version>
 		</dependency>
+
+		<dependency>
+			<groupId>javax.mail</groupId>
+			<artifactId>mail</artifactId>
+			<version>1.4.7</version>
+		</dependency>
 		<!--common end -->
+
+		<!--active mq start-->
+		<dependency>
+			<groupId>org.apache.activemq</groupId>
+			<artifactId>activemq-core</artifactId>
+			<version>5.7.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.activemq</groupId>
+			<artifactId>activemq-pool</artifactId>
+			<version>5.13.3</version>
+		</dependency>
+		<!--active mq end-->
 
 		<!--dubbo start -->
 		<dependency>
@@ -188,6 +211,18 @@
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-test</artifactId>
 			<version>${spring.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-jms</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.xbean</groupId>
+			<artifactId>xbean-spring</artifactId>
+			<version>4.2</version>
 		</dependency>
 		<!--spring end -->
 
