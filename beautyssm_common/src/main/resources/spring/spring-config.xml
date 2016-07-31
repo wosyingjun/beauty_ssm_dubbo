@@ -13,5 +13,7 @@
     <context:property-placeholder location="classpath:redis.properties" ignore-unresolvable="true"/>
     <context:property-placeholder location="classpath:system.properties" ignore-unresolvable="true"/>
     <context:property-placeholder location="classpath:ValidationMessages.properties" ignore-unresolvable="true"/>
+    <context:property-placeholder location="classpath:mq.properties" ignore-unresolvable="true"/>
 
+    <import resource="classpath:spring/spring-redis.xml"/>
 </beans>

@@ -19,7 +19,6 @@
 		<property name="testOnBorrow" value="${redis.pool.testOnBorrow}" />
 	</bean>
 
-
 	<!-- JedisCluster 集群高可用配置 -->
 	<!--<bean id="jedisCluster" class="redis.clients.jedis.JedisCluster">
 		<constructor-arg index="0">
