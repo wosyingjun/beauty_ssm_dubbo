@@ -11,19 +11,19 @@
 - [Redis Cluster集群高可用方案](http://wosyingjun.iteye.com/blog/2289220)
 - [基于keepalived的nginx高可用方案](http://wosyingjun.iteye.com/blog/2313147)
 - [Druid（数据源配置 sql防注入 sql性能监控)](http://wosyingjun.iteye.com/blog/2306139)
-- **[Dubbo+Zookeeper分布式服务框架](http://dubbo.io/Home-zh.htm)**
-- **合理的分布式服务划分（common+api+service+web）**
-- **[资源调度和治理中心(SOA)（dubbo-admin）](https://github.com/dangdangdotcom/dubbox/tree/master/dubbo-admin)**
-- **[服务监控方案(dubbo-monitor)](https://github.com/handuyishe/dubbo-monitor)**
-- **分布式系统中的异常处理**
-- **分布式事务**
-- **分布式锁（待完善）**
-- **[dubbo服务设计原则、集群、负载均衡、线程模型](http://dubbo.io/User+Guide-zh.htm)**
-- **[Zookeeper高可用集群方案](http://wosyingjun.iteye.com/blog/2312960)**
-- **消息中间件 ActiveMQ 的引入**
-- **ActiveMQ 集群高可用方案（待完善）**
-- **分布式文件系统（FastDFS）的引入（待完善）**
-- **FastDFS集群高可用方案（待完善）**
+- [Zookeeper高可用集群方案](http://wosyingjun.iteye.com/blog/2312960)
+- [Dubbo+Zookeeper分布式服务框架](http://dubbo.io/Home-zh.htm)
+- 合理的分布式服务划分（common+api+service+web+mq）
+- [dubbo服务设计原则、集群、负载均衡、线程模型](http://dubbo.io/User+Guide-zh.htm)
+- [资源调度和治理中心(SOA)（dubbo-admin）](https://github.com/dangdangdotcom/dubbox/tree/master/dubbo-admin)
+- [服务监控方案(dubbo-monitor)](https://github.com/handuyishe/dubbo-monitor)
+- 分布式系统中的异常处理
+- 分布式事务
+- 分布式锁（待完善）
+- 消息中间件 ActiveMQ 的引入
+- [ActiveMQ 集群高可用方案](http://wosyingjun.iteye.com/blog/2314683)
+- 分布式文件系统（FastDFS）的引入（待完善）
+- FastDFS集群高可用方案（待完善）
 
-###**架构图：**
+###架构图：
 ![](http://i.imgur.com/JRQ5Zwa.png)
