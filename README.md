@@ -1,4 +1,4 @@
-#将"优雅的SSM框架"拆分为分布式架构(基于dubbo+zookeeper)
+#将"优雅的SSM框架"服务化治理(基于dubbo+zookeeper)
 
 - Maven（模块化构建）
 - Spring（IOC DI AOP 声明式事务处理）
