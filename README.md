@@ -1,5 +1,7 @@
 #将"优雅的SSM框架"服务化治理(基于dubbo+zookeeper)
 
+dubbo服务的简单应用及部署可以参见：[DubboxDemo](https://github.com/wosyingjun/DubboxDemo)
+
 - Maven（模块化构建）
 - Spring（IOC DI AOP 声明式事务处理）
 - SpringMVC（支持Restful风格）
@@ -22,8 +24,7 @@
 - **分布式锁（待完善）**
 - 消息中间件 ActiveMQ 的引入
 - [ActiveMQ 集群高可用方案](http://wosyingjun.iteye.com/blog/2314683)
-- **分布式文件系统（FastDFS）的引入（待完善）**
-- **FastDFS集群高可用方案（待完善）**
+
 
 ###架构图：
 ![](http://i.imgur.com/JRQ5Zwa.png)
