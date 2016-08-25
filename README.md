@@ -1,6 +1,6 @@
 #将"优雅的SSM框架"服务化治理(基于dubbo+zookeeper)
 
-####dubbo服务的简单应用及部署可以参见：[DubboxDemo](https://github.com/wosyingjun/DubboxDemo)
+###Dubbo服务的简单应用及部署可以参见：[DubboxDemo](https://github.com/wosyingjun/DubboxDemo)
 
 - Maven（模块化构建）
 - Spring（IOC DI AOP 声明式事务处理）
