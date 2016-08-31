@@ -26,4 +26,4 @@
 - **FastDFS集群高可用方案（待完善）**
 
 ###架构图：
-![](http://i.imgur.com/JRQ5Zwa.png)
+![](http://i.imgur.com/JRQ5Zwa.png) 
