@@ -1,29 +1,30 @@
-#将"优雅的SSM框架"拆分为分布式架构(基于dubbo+zookeeper)
+#将"优雅的SSM框架"服务化治理(基于dubbo+zookeeper)
+
+###Dubbo服务的简单应用及部署可以参见：[DubboxDemo](https://github.com/wosyingjun/DubboxDemo)
 
 - Maven（模块化构建）
-- Spring（IOC DI 声明式事务处理）
+- Spring（IOC DI AOP 声明式事务处理）
 - SpringMVC（支持Restful风格）
 - Hibernate Validate（参数校验）
-- Mybatis（最少配置方案）
+- Mybatis（最少配置方案） 
 - Quartz时间调度
 - Redis缓存（ProtoStuff序列化）
-- **[Redis Sentinel主从高可用方案](http://wosyingjun.iteye.com/blog/2289593)**
-- **[Redis Cluster集群高可用方案](http://wosyingjun.iteye.com/blog/2289220)**
-- **[基于keepalived的nginx高可用方案](http://wosyingjun.iteye.com/blog/2313147)**
-- **[Druid（数据源配置 sql防注入 sql性能监控)](http://wosyingjun.iteye.com/blog/2306139)**
-- **[Dubbo+Zookeeper分布式服务框架](http://dubbo.io/Home-zh.htm)**
-- **合理的分布式服务划分（common+api+service+web）**
-- **[资源调度和治理中心(SOA)（dubbo-admin）](https://github.com/dangdangdotcom/dubbox/tree/master/dubbo-admin)**
-- **[服务监控方案(dubbo-monitor)](https://github.com/handuyishe/dubbo-monitor)**
-- **分布式系统中的异常处理**
-- **分布式事务（待完善）**
-- **分布式锁（待完善）**
-- **dubbo服务集群、负载均衡策略（待完善）**
-- **[Zookeeper集群高可用方案](http://wosyingjun.iteye.com/blog/2312960)**
-- **消息中间件 ActiveMQ 的引入（待完善）**
-- **ActiveMQ 集群高可用方案（待完善）**
-- **分布式文件系统（FastDFS）的引入（待完善）**
-- **FastDFS集群高可用方案（待完善）**
+- [Redis Sentinel主从高可用方案](http://wosyingjun.iteye.com/blog/2289593)
+- [Redis Cluster集群高可用方案](http://wosyingjun.iteye.com/blog/2289220)
+- [基于keepalived的nginx高可用方案](http://wosyingjun.iteye.com/blog/2313147)
+- [Druid（数据源配置 sql防注入 sql性能监控)](http://wosyingjun.iteye.com/blog/2306139)
+- [Zookeeper高可用集群方案](http://wosyingjun.iteye.com/blog/2312960)
+- [Dubbo+Zookeeper分布式服务框架](http://dubbo.io/Home-zh.htm)
+- 合理的分布式服务划分（common+api+service+web+mq）
+- [dubbo服务设计原则、集群、负载均衡、线程模型](http://dubbo.io/User+Guide-zh.htm)
+- [资源调度和治理中心(SOA)（dubbo-admin）](https://github.com/dangdangdotcom/dubbox/tree/master/dubbo-admin)
+- [服务监控方案(dubbo-monitor)](https://github.com/handuyishe/dubbo-monitor)
+- 分布式系统中的异常处理
+- 分布式事务
+- 分布式锁（待完善）
+- 消息中间件 ActiveMQ 的引入
+- [ActiveMQ 集群高可用方案](http://wosyingjun.iteye.com/blog/2314683)
 
-###**架构图：**
-![](http://i.imgur.com/JRQ5Zwa.png)
+
+###架构图：
+![](http://i.imgur.com/bANkRWU.png)

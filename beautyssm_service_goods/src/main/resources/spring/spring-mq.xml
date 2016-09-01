@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	   xmlns:context="http://www.springframework.org/schema/context"
+	   xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans-3.2.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<context:component-scan base-package="com.yingjun.ssm.core.goods.mq" />
+
+	<!-- 真正可以产生Connection的ConnectionFactory，由对应的 JMS服务厂商提供 -->
+	<bean id="targetConnectionFactory" class="org.apache.activemq.ActiveMQConnectionFactory">
+		<!-- ActiveMQ服务地址 -->
+        <property name="brokerURL" value="${mq.brokerURL}" />
+        <property name="userName" value="${mq.userName}"></property>
+        <property name="password" value="${mq.password}"></property>
+		<property name="useAsyncSend" value="true"/>
+	</bean>
+
+	<!--
+        ActiveMQ为我们提供了一个PooledConnectionFactory，通过往里面注入一个ActiveMQConnectionFactory
+        可以用来将Connection、Session和MessageProducer池化，这样可以大大的减少我们的资源消耗。
+        要依赖于 activemq-pool包
+     -->
+	<bean id="pooledConnectionFactory" class="org.apache.activemq.pool.PooledConnectionFactory">
+		<property name="connectionFactory" ref="targetConnectionFactory"/>
+		<property name="maxConnections" value="${mq.pool.maxConnections}"/>
+	</bean>
+
+	<!-- Spring用于管理真正的ConnectionFactory的ConnectionFactory -->
+	<bean id="connectionFactory" class="org.springframework.jms.connection.SingleConnectionFactory">
+		<!-- 目标ConnectionFactory对应真实的可以产生JMS Connection的ConnectionFactory -->
+		<property name="targetConnectionFactory" ref="pooledConnectionFactory"/>
+		<property name="reconnectOnException" value="true"/>
+	</bean>
+
+	<!-- 队列目的地-->
+	<bean id="bizQueue" class="org.apache.activemq.command.ActiveMQQueue">
+		<constructor-arg index="0" value="${biz.queueName}"/>
+	</bean>
+	<bean id="mailQueue" class="org.apache.activemq.command.ActiveMQQueue">
+		<constructor-arg index="0" value="${mail.queueName}"/>
+	</bean>
+
+
+	<!-- Spring提供的JMS工具类，它可以进行消息发送、接收等 -->
+	<!-- 队列模板 这里配置2个，一个用于分布式业务，一个用于发送邮件-->
+	<bean id="bizMqJmsTemplate" class="org.springframework.jms.core.JmsTemplate">
+		<!-- 这个connectionFactory对应的是我们定义的Spring提供的那个ConnectionFactory对象 -->
+		<property name="connectionFactory" ref="connectionFactory"/>
+		<property name="defaultDestination" ref="bizQueue"/>
+		<!-- 使 deliveryMode, priority, timeToLive设置生效-->
+		<property name="explicitQosEnabled" value="true" />
+		<!-- 持久化 如果设置为非持久化MQ服务器重启后MQ中的数据会丢失-->
+		<property name="deliveryPersistent" value="true"/>
+		<!--这里注意:如果不开启事务，消息在异常的情况下是不会重试的-->
+		<property name="sessionTransacted" value="false"/>
+		<!--消息发送的优先级，从0-9，越大越优先，默认为4-->
+		<property name="priority" value="3"/>
+	</bean>
+
+	<bean id="mailMqJmsTemplate" class="org.springframework.jms.core.JmsTemplate">
+		<!-- 这个connectionFactory对应的是我们定义的Spring提供的那个ConnectionFactory对象 -->
+		<property name="connectionFactory" ref="connectionFactory"/>
+		<property name="defaultDestination" ref="mailQueue"/>
+		<!-- 使 deliveryMode, priority, timeToLive设置生效-->
+		<property name="explicitQosEnabled" value="true" />
+		<!-- 持久化 如果设置为非持久化MQ服务器重启后MQ中的数据会丢失-->
+		<property name="deliveryPersistent" value="true"/>
+		<!--这里注意:如果不开启事务，消息在异常的情况下是不会重试的-->
+		<property name="sessionTransacted" value="true"/>
+		<!--消息发送的优先级，从0-9，越大越优先，默认为4-->
+		<property name="priority" value="2"/>
+	</bean>
+
+
+</beans>

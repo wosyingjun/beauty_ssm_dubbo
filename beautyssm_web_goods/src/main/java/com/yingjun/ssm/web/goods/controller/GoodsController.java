@@ -3,9 +3,9 @@ package com.yingjun.ssm.web.goods.controller;
 import com.alibaba.dubbo.rpc.RpcException;
 import com.yingjun.ssm.api.goods.entity.Goods;
 import com.yingjun.ssm.api.goods.service.GoodsService;
-import com.yingjun.ssm.api.user.enums.UserExceptionEnum;
 import com.yingjun.ssm.common.dto.BaseResult;
 import com.yingjun.ssm.common.dto.BootStrapTableResult;
+import com.yingjun.ssm.common.enums.BizExceptionEnum;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -62,8 +62,9 @@ public class GoodsController {
     public BaseResult<Object> buy(@CookieValue(value = "userPhone", required = false) Long userPhone,
                                   @Valid Goods goods, BindingResult result, HttpSession httpSession) {
         LOG.info("invoke----------/" + goods.getGoodsId() + "/buy userPhone:" + userPhone);
-        if (userPhone != null) {
-            return new BaseResult<Object>(false, UserExceptionEnum.INVALID_USER.getMsg());
+        if (userPhone == null) {
+            //return new BaseResult<Object>(false, UserExceptionEnum.INVALID_USER.getMsg());
+            userPhone=18768128888L;
         }
         //Valid 参数验证
         if (result.hasErrors()) {
@@ -81,7 +82,7 @@ public class GoodsController {
             return new BaseResult<Object>(false, e.getMessage());
         } catch (Exception e) {
             LOG.error(e.getMessage());
-            return new BaseResult<Object>(false, e.getMessage());
+            return new BaseResult<Object>(false, BizExceptionEnum.INNER_ERROR.getMsg());
         }
         return new BaseResult<Object>(true, null);
     }
@@ -102,31 +103,10 @@ public class GoodsController {
             return new BaseResult<Object>(false, e.getMessage());
         } catch (Exception e) {
             LOG.error(e.getMessage());
-            return new BaseResult<Object>(false, e.getMessage());
+            return new BaseResult<Object>(false, BizExceptionEnum.INNER_ERROR.getMsg());
         }
         return new BaseResult<Object>(true, null);
     }
 
-
-    @RequestMapping(value = "/{goodsId}/testDistributedTransactionByAsy", produces = {"application/json;charset=UTF-8"})
-    @ResponseBody
-    public BaseResult<Object> testDistributedTransactionByAsy(@Valid Goods goods, BindingResult result) {
-        LOG.info("invoke----------/goods/testDistributedTransactionByAsy");
-        //Valid 参数验证
-        if (result.hasErrors()){
-            String errorInfo = "[" + result.getFieldError().getField() + "]" + result.getFieldError().getDefaultMessage();
-            return new BaseResult<Object>(false, errorInfo);
-        }
-        try {
-            goodsService.testDistributedTransactionByAsy(goods.getGoodsId());
-        } catch (RpcException e) {
-            LOG.error(e.getMessage());
-            return new BaseResult<Object>(false, e.getMessage());
-        } catch (Exception e) {
-            LOG.error(e.getMessage());
-            return new BaseResult<Object>(false, e.getMessage());
-        }
-        return new BaseResult<Object>(true, null);
-    }
 
 }
