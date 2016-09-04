@@ -21,7 +21,7 @@ public class DistributedBolckingQueueTest {
             new Thread(new Runnable() {
                 @Override
                 public void run() {
-                    DistributedBlockingQueue queue=new DistributedBlockingQueue("120.27.141.45:2181", "test");
+                    DistributedBlockingQueue queue=new DistributedBlockingQueue("120.27.xxx.xx:2181", "test");
                     try {
                         queue.put(Thread.currentThread().getName().getBytes());
                     } catch (KeeperException e) {

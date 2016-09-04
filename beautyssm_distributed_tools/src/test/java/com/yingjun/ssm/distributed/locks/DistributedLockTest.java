@@ -20,7 +20,7 @@ public class DistributedLockTest {
             new Thread(new Runnable() {
                 @Override
                 public void run() {
-                    DistributedLock lock = new DistributedLock("120.27.141.45:2181", "test");
+                    DistributedLock lock = new DistributedLock("120.27.xxx.xx:2181", "test");
                     try {
                         lock.lock();
                     } catch (KeeperException e) {
