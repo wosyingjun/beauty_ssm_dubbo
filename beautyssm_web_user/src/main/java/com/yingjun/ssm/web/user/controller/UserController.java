@@ -49,6 +49,6 @@ public class UserController {
 		List<User> list = userService.getUserList(offset, limit);
 		return new BootStrapTableResult<User>(list);
 	}
-	
-	
+
+
 }

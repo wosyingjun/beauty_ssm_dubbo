@@ -105,7 +105,7 @@ public class RedisClusterCache {
 	 * @return
      */
 	public Set<String> keys(String pattern){
-		Set<String> keys = new HashSet<>();
+		Set<String> keys = new HashSet<String>();
 		Map<String, JedisPool> clusterNodes = jedisCluster.getClusterNodes();
 		for(String k : clusterNodes.keySet()){
 			JedisPool jp = clusterNodes.get(k);

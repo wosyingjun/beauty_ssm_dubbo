@@ -21,7 +21,7 @@
 - [服务监控方案(dubbo-monitor)](https://github.com/handuyishe/dubbo-monitor)
 - 分布式系统中的异常处理
 - 分布式事务
-- 分布式锁（待完善）
+- 分布式锁（见beautyssm_distributed_tools）
 - 消息中间件 ActiveMQ 的引入
 - [ActiveMQ 集群高可用方案](http://wosyingjun.iteye.com/blog/2314683)
 

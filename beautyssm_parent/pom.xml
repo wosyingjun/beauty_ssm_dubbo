@@ -22,6 +22,8 @@
 
 		<beautyssm_mq_consumer.version>1.0.0</beautyssm_mq_consumer.version>
 
+		<beauty_distributed_tools.version>1.0.0</beauty_distributed_tools.version>
+
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<maven.build.timestamp.format>yyyyMMdd</maven.build.timestamp.format>
 		<spring.version>4.2.0.RELEASE</spring.version>
@@ -30,16 +32,14 @@
 
 	<modules>
 		<module>../beautyssm_common</module>
-
 		<module>../beautyssm_api_user</module>
 		<module>../beautyssm_service_user</module>
 		<module>../beautyssm_web_user</module>
-
 		<module>../beautyssm_api_goods</module>
 		<module>../beautyssm_service_goods</module>
 		<module>../beautyssm_web_goods</module>
-
 		<module>../beautyssm_mq_consumer</module>
+		<module>../beautyssm_distributed_tools</module>
 	</modules>
 
 
