@@ -10,8 +10,8 @@
   </parent>
 
   <groupId>com.yingjun.ssm</groupId>
-  <artifactId>beauty_distributed_tools</artifactId>
-  <version>${beauty_distributed_tools.version}</version>
+  <artifactId>beautyssm_distributed_tools</artifactId>
+  <version>${beautyssm_distributed_tools.version}</version>
   <packaging>jar</packaging>
 
 

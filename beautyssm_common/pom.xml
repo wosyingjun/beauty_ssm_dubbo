@@ -13,5 +13,12 @@
 	<version>${beautyssm_common.version}</version>
 	<packaging>jar</packaging>
 
+	<dependencies>
+		<dependency>
+			<groupId>com.yingjun.ssm</groupId>
+			<artifactId>beautyssm_distributed_tools</artifactId>
+			<version>${beautyssm_distributed_tools.version}</version>
+		</dependency>
+	</dependencies>
 
 </project>

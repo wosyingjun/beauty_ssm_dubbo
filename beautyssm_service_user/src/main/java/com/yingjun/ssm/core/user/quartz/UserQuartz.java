@@ -1,13 +1,13 @@
 package com.yingjun.ssm.core.user.quartz;
 
+import com.yingjun.ssm.core.user.dao.UserDao;
+import com.yingjun.ssm.distributed.locks.DistributedLock;
+import org.apache.zookeeper.KeeperException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
-
-import com.yingjun.ssm.common.util.cache.RedisCache;
-import com.yingjun.ssm.core.user.dao.UserDao;
 
 
 /**
@@ -41,12 +41,21 @@ public class UserQuartz {
 	/**
 	 * 用户自动加积分
 	 * 每天9点到17点每过1分钟所有用户加一次积分
-	 * （这里要注意集群环境 可能出现重复触发的情况 ）
+	 *
+	 * (这里要注意集群环境 可能出现重复触发的情况)
+	 * 这里采用分布式锁的方式解决重复触发的问题
+	 *
+	 * TODO zookeeper地址采用配置文件的方式读入，并且为高可用。
+	 * TODO 多个线程下第一次同时调用new DistributedLock（）会冲突问题
 	 */
 	@Scheduled(cron = "0 0/1 9-17 * * ? ")
-	public void addUserScore() {
-		LOG.info("@Scheduled--------addUserScore()");
-		userDao.addScore(10);
+	public void addUserScore() throws KeeperException, InterruptedException {
+		DistributedLock lock=new DistributedLock("192.168.xx.xxx:2181","quartz");
+		if(lock.tryLock()){
+			LOG.info("@Scheduled--------addUserScore()");
+			userDao.addScore(10);
+		}
+		lock.unlock();//释放锁
 	}
 	
 }

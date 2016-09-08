@@ -12,7 +12,6 @@ public class DistributedLockTest {
 
     private final Logger logger = LoggerFactory.getLogger(DistributedLockTest.class);
 
-
     @Test
     public void test() throws InterruptedException {
         //用多线程模拟分布式服务
@@ -46,3 +45,5 @@ public class DistributedLockTest {
 
 
 }
+
+

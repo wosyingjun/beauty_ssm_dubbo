@@ -22,7 +22,7 @@
 
 		<beautyssm_mq_consumer.version>1.0.0</beautyssm_mq_consumer.version>
 
-		<beauty_distributed_tools.version>1.0.0</beauty_distributed_tools.version>
+		<beautyssm_distributed_tools.version>1.0.0</beautyssm_distributed_tools.version>
 
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<maven.build.timestamp.format>yyyyMMdd</maven.build.timestamp.format>

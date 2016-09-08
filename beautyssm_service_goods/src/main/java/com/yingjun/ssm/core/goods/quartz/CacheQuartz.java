@@ -1,6 +1,7 @@
 package com.yingjun.ssm.core.goods.quartz;
 
 
+import com.yingjun.ssm.distributed.locks.DistributedLock;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -41,11 +42,11 @@ public class CacheQuartz {
 	
 	/**
 	 * 每隔5分钟定时清理缓存
-	 * （这里要注意集群环境 可能出现重复触发的情况 ）
+	 * 这几在集群环境 重复触发没关系
 	 */
 	@Scheduled(cron = "0 0/5 * * * ? ")
 	public void cacheClear() {
-		LOG.info("@Scheduled-------cacheClear()");
+		DistributedLock lock=new DistributedLock("192.168.xx.xxx:2181","quartz");
 		cache.clearCache();
 	}
 	

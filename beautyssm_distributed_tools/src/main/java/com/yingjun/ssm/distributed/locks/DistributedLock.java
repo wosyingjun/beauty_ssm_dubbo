@@ -14,6 +14,8 @@ import java.util.concurrent.CountDownLatch;
 /**
  * 基于Zookeeper设计的分布式锁
  *
+ * TODO zookeeper连接改为高可用
+ *
  * @author yingjun
  */
 public class DistributedLock{
