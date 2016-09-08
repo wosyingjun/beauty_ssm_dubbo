@@ -32,6 +32,7 @@
 
 	<modules>
 		<module>../beautyssm_common</module>
+		<module>../beautyssm_distributed_tools</module>
 		<module>../beautyssm_api_user</module>
 		<module>../beautyssm_service_user</module>
 		<module>../beautyssm_web_user</module>
@@ -39,7 +40,6 @@
 		<module>../beautyssm_service_goods</module>
 		<module>../beautyssm_web_goods</module>
 		<module>../beautyssm_mq_consumer</module>
-		<module>../beautyssm_distributed_tools</module>
 	</modules>
 
 
