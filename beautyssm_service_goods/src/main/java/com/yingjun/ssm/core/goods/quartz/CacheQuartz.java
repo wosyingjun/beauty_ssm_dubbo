@@ -1,14 +1,12 @@
 package com.yingjun.ssm.core.goods.quartz;
 
 
-import com.yingjun.ssm.distributed.locks.DistributedLock;
+import com.yingjun.ssm.common.util.cache.RedisCache;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
-
-import com.yingjun.ssm.common.util.cache.RedisCache;
 
 
 
@@ -46,7 +44,6 @@ public class CacheQuartz {
 	 */
 	@Scheduled(cron = "0 0/5 * * * ? ")
 	public void cacheClear() {
-		DistributedLock lock=new DistributedLock("192.168.xx.xxx:2181","quartz");
 		cache.clearCache();
 	}
 	
